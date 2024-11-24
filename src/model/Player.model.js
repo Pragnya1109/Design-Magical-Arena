@@ -35,5 +35,8 @@ class Player {
     // 4th updates health if required
     this.health -= damageTaken;
   }
+  toString() {
+    return this.name;
+  }
 }
 module.exports = Player;
