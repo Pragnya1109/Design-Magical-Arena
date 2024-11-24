@@ -1,5 +1,5 @@
-const Player = require("../src/model/Player");
-const Arena = require("../src/model/Arena");
+const Player = require("../model/Player.model");
+const Arena = require("../model/Arena.model");
 
 describe("Arena Class", () => {
   test("Arena should initialize with two players", () => {

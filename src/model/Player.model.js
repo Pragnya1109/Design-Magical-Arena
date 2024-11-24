@@ -4,6 +4,13 @@ class Player {
     this.health = health;
     this.strength = strength;
     this.attack = attack;
+
+    // adding some checks
+    if (health <= 0 || strength <= 0 || attack <= 0) {
+      throw new Error(
+        `${name} must have positive values for health, strength, and attack.`
+      );
+    }
   }
 
   rollDice() {

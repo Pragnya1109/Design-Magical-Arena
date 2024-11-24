@@ -1,4 +1,4 @@
-const Player = require("../src/model/Player");
+const Player = require("../model/Player.model");
 
 describe("Player Class", () => {
   test("Player should initialize correctly", () => {
