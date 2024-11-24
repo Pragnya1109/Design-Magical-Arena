@@ -12,14 +12,13 @@ class Arena {
       // decide who is attacker & who is defender
       let attacker, defender;
       [attacker, defender] = this.getFirstAttacker();
-
       // attack opponent
       attacker.attackOpponent(defender);
     }
     // declare winner
     const winner = this.player1.isAlive() ? this.player1 : this.player2;
     console.log(
-      `***************** ${winner} wins the game!!! Congrats!! *****************`
+      `\n\n***************** ${winner} wins the game!!! Congrats!! *****************`
     );
   }
 
